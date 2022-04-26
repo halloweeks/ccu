@@ -42,7 +42,7 @@ int main(int argc, char const *argv[]){
 	}
 	
 	while (true) {
-		std::cout << "[tcp]> ";
+		std::cout << "\n[tcp]> ";
 		getline(std::cin, msg);
 		std::cout << std::endl;
 		
@@ -51,6 +51,7 @@ int main(int argc, char const *argv[]){
 		} else if (msg =="exit") {
 			std::cout << "[EXITED] BYE!" << std::endl;
 			close(sock);
+			break;
 		}
 			
 		if (send(sock, msg.c_str(), BUFFER_SIZE, 0) > 0) {

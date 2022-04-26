@@ -6,7 +6,7 @@
 #include <pthread.h>
 
 // max concurrent connections
-#define CONCURRENT_CONNECTION 3
+#define CONCURRENT_CONNECTION 5
 
 // max connection requests queued
 #define QUEUE_CONNECTION 40

@@ -1,4 +1,4 @@
-# C++ tcp concurrent connection handling
+<b> C++ tcp concurrent connection handling multiple clients support</p>
 
 ```
 git clone https://github.com/halloweeks/TCP-concurrent-connection.git
@@ -9,9 +9,13 @@ cd TCP-concurrent-connection
 ```
 
 ```
-g++ server.cpp -o server -lpthread -std=c++17
+bash build.sh
 ```
 
 ```
-g++ client.cpp -o client -std=c++17
+./server
+```
+
+```
+./client
 ```

@@ -4,9 +4,8 @@ if ! dpkg -s cmake >/dev/null 2>&1; then
   exit 1;
 fi
 
-if ! dpkg -s clang >/dev/null 2>&1; then
-  echo -e "We not found clang on your system\nPlease run apt-get install clang"
-  exit 1;
+if ! dpkg -s g++ >/dev/null 2>&1; then
+   echo -e "We not found g++ on you system\nPlease run apt-get install g++"
 fi
 
 rm -rf build
@@ -14,6 +13,6 @@ mkdir build
 cd build
 cmake ..
 make
-cp server ../
-cp client ../
+cp server.exe ../
+cp client.exe ../
 rm -rf ../build
